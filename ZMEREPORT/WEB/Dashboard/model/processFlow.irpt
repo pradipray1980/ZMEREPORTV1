@@ -1,0 +1,16 @@
+<SERVLET NAME="Illuminator">
+<HR>
+Illuminator Content Here
+<HR>
+<PARAM NAME= "QueryTemplate" VALUE="ZMEREPORT/Dashboard/Queries/getUIXMLXacQry">
+<PARAM NAME= "Stylesheet" VALUE="/XMII/CM/">
+<PARAM NAME= "Content-Type" VALUE="text/json">
+<PARAM NAME= "Param.1" VALUE="{Site}">
+<PARAM NAME= "Param.2" VALUE="{Router}">
+<PARAM NAME= "Param.3" VALUE="{sfc}">
+<PARAM NAME= "Param.4" VALUE="{opn}">
+<PARAM NAME= "Param.5" VALUE="{startDate}">
+<PARAM NAME= "Param.6" VALUE="{endDate}">
+<PARAM NAME= "Param.7" VALUE="{qTime}">
+<PARAM NAME= "Param.8" VALUE="{Trx}">
+</SERVLET>

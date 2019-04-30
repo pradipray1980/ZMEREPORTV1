@@ -1,0 +1,11 @@
+<SERVLET NAME="Illuminator">
+<HR>
+Illuminator Content Here
+<HR>
+<PARAM NAME= "QueryTemplate" VALUE="ZMEREPORT/Dashboard/Queries/getSFCXacQry">
+<PARAM NAME= "Stylesheet" VALUE="/XMII/CM/">
+<PARAM NAME= "Content-Type" VALUE="text/json">
+<PARAM NAME= "Param.1" VALUE="{Step}">
+<PARAM NAME= "Param.2" VALUE="{Router}">
+<PARAM NAME= "Param.3" VALUE="{Site}">
+</SERVLET>

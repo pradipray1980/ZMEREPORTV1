@@ -1,0 +1,9 @@
+<SERVLET NAME="Illuminator">
+<HR>
+Illuminator Content Here
+<HR>
+<PARAM NAME= "QueryTemplate" VALUE="ZMEREPORT/Dashboard/Queries/selRouterSQLQry">
+<PARAM NAME= "Stylesheet" VALUE="/XMII/CM/">
+<PARAM NAME= "Content-Type" VALUE="text/json">
+<PARAM NAME= "Param.1" VALUE="{Plant}">
+</SERVLET>

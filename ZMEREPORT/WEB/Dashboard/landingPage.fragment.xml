@@ -1,0 +1,43 @@
+<core:FragmentDefinition
+	xmlns="sap.m"
+	xmlns:l="sap.ui.layout"
+	xmlns:core="sap.ui.core">
+ <P13nDialog showReset="false" 
+                 class="sapUiSizeCompact">
+	<l:VerticalLayout
+		class="sapUiContentPadding"
+		width="100%">
+		<Label text="Site" labelFor="Plant" visible="true"/>
+			<Select
+				      id ="advPlant"
+				   	visible="true"
+					forceSelection="false"
+				         change ="onAdvPlantChange"
+					selectedKey="{site>/Rowsets/Rowset/0/Row/SITE}"
+					items="{
+						path: 'site>/Rowsets/Rowset/0/Row',
+						sorter: { path: 'SITE' }
+					}">
+					<core:Item key="{site>SITE}" text="{site>DESCRIPTION}" />
+				</Select>
+		<Label text="Routing" labelFor="Routing" visible="true"/>
+			<Select
+				      id ="advRouting"
+				         visible="true"
+				   	change = "onAdvRoutePress"
+					forceSelection="false"
+				       	selectedKey="{route>/Rowsets/Rowset/0/Row/SITE}"
+					items="{
+						path: 'route>/Rowsets/Rowset/0/Row',
+						sorter: { path: 'ROUTER' }
+					}">
+					<core:Item key="{route>ROUTER}" text="{route>DESCRIPTION}" />
+				</Select>
+			<Link
+			         id = "urlLink"
+				text="Link to Use"
+				target="_blank"
+				href="" />
+	</l:VerticalLayout>
+	 </P13nDialog>
+</core:FragmentDefinition>

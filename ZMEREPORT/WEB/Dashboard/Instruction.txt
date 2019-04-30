@@ -1,0 +1,10 @@
+Details: This application shows the current status of any routing. It shows howmany SFCs are there at the operation, if there are work going on in that operation, it sows i there are SFCs on hold and number of NCs at the operation. 
+
+The way to start the application 
+
+URL/Dashboard/index.html?Router=<Router Name>&Site=<Site>
+
+Performance improvement possible:
+Dashboard/Queries/SQLQ_GetHoldSFCsAtOperation
+Dashboard/Queries/SQLQ_GetSFCNCAtOperation
+Dashboard/Queries/SQLQ_GetSFCsAtOperation

@@ -1,0 +1,46 @@
+{
+	"Rowsets": {
+		"DateCreated": "2019-04-16T20:11:58",
+		"Version": "15.1 SP3 Patch 28 (Jun 8, 2017)",
+		"StartDate": "2019-04-16T19:11:58+0000",
+		"EndDate": "2019-04-16T20:11:58+0000",
+		"CachedTime": "",
+		"Rowset": [{
+			"Columns": {
+				"Column": [{
+					"Name": "ROUTER",
+					"SourceColumn": "ROUTER",
+					"Description": "ROUTER",
+					"SQLDataType": -9,
+					"MinRange": 1.0,
+					"MaxRange": 1.0
+				}, {
+					"Name": "SITE",
+					"SourceColumn": "SITE",
+					"Description": "SITE",
+					"SQLDataType": -9,
+					"MinRange": 1.0,
+					"MaxRange": 1.0
+				}, {
+					"Name": "DESCRIPTION",
+					"SourceColumn": "DESCRIPTION",
+					"Description": "DESCRIPTION",
+					"SQLDataType": -9,
+					"MinRange": 1.0,
+					"MaxRange": 1.0
+				}]
+			},
+			"Row": [{
+					"ROUTER": "Demo_Routing_1",
+					"SITE": "1000",
+					"DESCRIPTION": "Demo Routing 1"
+				},
+				{
+					"ROUTER": "Demo_Routing_2",
+					"SITE": "1000",
+					"DESCRIPTION": "Demo Routing 2"
+				}
+			]
+		}]
+	}
+}

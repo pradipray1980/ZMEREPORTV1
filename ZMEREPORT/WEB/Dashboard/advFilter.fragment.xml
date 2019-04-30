@@ -1,0 +1,74 @@
+<core:FragmentDefinition
+	xmlns="sap.m"
+	xmlns:l="sap.ui.layout"
+	xmlns:core="sap.ui.core">
+ <P13nDialog showReset="true" ok="onAdvOK" cancel="onAdvCancel" reset="onAdvReset" showResetEnabled="true"
+                 class="sapUiSizeCompact">
+	<l:VerticalLayout
+		class="sapUiContentPadding"
+		width="100%">
+		<Label text="Site" labelFor="Plant" visible="false"/>
+			<Select
+				      id ="advPlant"
+				   	visible="false"
+					forceSelection="false"
+				         change ="onAdvPlantChange"
+					selectedKey="{site>/Rowsets/Rowset/0/Row/SITE}"
+					items="{
+						path: 'site>/Rowsets/Rowset/0/Row',
+						sorter: { path: 'SITE' }
+					}">
+					<core:Item key="{site>SITE}" text="{site>DESCRIPTION}" />
+				</Select>
+		<Label text="Routing" labelFor="Routing" visible="false"/>
+			<Select
+				      id ="advRouting"
+				         visible="false"
+				   	change = "onAdvRoutePress"
+					forceSelection="false"
+				       	selectedKey="{route>/Rowsets/Rowset/0/Row/SITE}"
+					items="{
+						path: 'route>/Rowsets/Rowset/0/Row',
+						sorter: { path: 'ROUTER' }
+					}">
+					<core:Item key="{route>ROUTER}" text="{route>DESCRIPTION}" />
+				</Select>
+		<l:content>
+			<Label text="SFC" labelFor="sfc"/>
+			<Input id="sfc" required="false"/>
+			<Label text="Operation" labelFor="opn"/>
+			<Input id="opn" required="false"/>
+		        <Label text="Material" labelFor="mat"/>
+			<Input id="mat" required="false"/>
+		<Label text="Start Date" labelFor="StartDate"/>
+		<DateTimeInput
+			id="StartDate"
+			type="DateTime"
+			placeholder="Enter Date ..."
+			class="sapUiSmallMarginBottom" 
+			valueFormat= "yyyy-MM-dd'T'HH:mm:ss"
+			 />
+		<Label text="End Date" labelFor="EndDate"/>
+		<DateTimeInput
+			id="EndDate"
+			type="DateTime"
+			placeholder="Enter Date ..."
+			class="sapUiSmallMarginBottom" 
+			valueFormat= "yyyy-MM-dd'T'HH:mm:ss"/>
+		<Label text="Time" labelFor="quickTime"/>
+		<Select
+					id="quickTime"
+					forceSelection="true"
+					selectedKey="30"
+					>
+					<core:Item key="30" text="30 Minutes" />
+				       <core:Item key="60" text="1 Hour" />
+				       <core:Item key="360" text="6 Hours" />
+				       <core:Item key="1440" text="24 Hours" />
+				       <core:Item key="2880" text="48 Hours" />
+				      <core:Item key="4320" text="72 Hours" />
+				</Select>
+		</l:content>
+	</l:VerticalLayout>
+	 </P13nDialog>
+</core:FragmentDefinition>

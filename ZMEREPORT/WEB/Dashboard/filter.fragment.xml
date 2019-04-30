@@ -1,0 +1,50 @@
+<core:FragmentDefinition
+	xmlns="sap.m"
+	xmlns:l="sap.ui.layout"
+	xmlns:core="sap.ui.core">
+	<Popover
+		title="{Name}"
+		class="sapUiContentPadding"
+		placement="Bottom"
+			initialFocus="email">
+		<footer>
+			<Toolbar>
+				<ToolbarSpacer/>
+				<Button
+					id="ok"
+					text="OK"
+					press="onOkPress" />
+			          <Button
+					id="cancel"
+					text="Cancel"
+					press="onCancelPress" />
+			</Toolbar>
+		</footer>
+	<l:VerticalLayout class="sapUiContentPadding">
+		<Label text="Site" labelFor="Plant"/>
+			<Select
+				      id ="Plant"
+					forceSelection="false"
+				         change ="onPlantChange"
+					selectedKey="{site>/Rowsets/Rowset/0/Row/SITE}"
+					items="{
+						path: 'site>/Rowsets/Rowset/0/Row',
+						sorter: { path: 'SITE' }
+					}">
+					<core:Item key="{site>SITE}" text="{site>DESCRIPTION}" />
+				</Select>
+		<Label text="Routing" labelFor="Routing"/>
+			<Select
+				      id ="Routing"
+				   change = "onRoutePress"
+					forceSelection="false"
+				       	selectedKey="{route>/Rowsets/Rowset/0/Row/SITE}"
+					items="{
+						path: 'route>/Rowsets/Rowset/0/Row',
+						sorter: { path: 'ROUTER' }
+					}">
+					<core:Item key="{route>ROUTER}" text="{route>DESCRIPTION}" />
+				</Select>
+	</l:VerticalLayout>
+	</Popover>
+</core:FragmentDefinition>
