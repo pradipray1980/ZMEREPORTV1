@@ -1,0 +1,54 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta charset="utf-8">
+<meta http-equiv='Pragma' content='no-cache' />
+<meta http-equiv='content-Control' content='no-cache' />
+<meta http-equiv='Cache-Control' content='no-cache, no-store, must-revalidate' />
+<meta http-equiv='Expires' content='0' />
+
+		<title>Dashboard</title>
+
+		<script id="sap-ui-bootstrap"
+			src="/sapui5/resources/sap-ui-core.js"
+			data-sap-ui-libs="sap.m"
+			data-sap-ui-theme="sap_belize"
+			data-sap-ui-xx-bindingSyntax="complex"
+			data-sap-ui-preload="async"
+			data-sap-ui-compatVersion="edge"
+			data-sap-ui-resourceroots='{"Dashboard": "./"}'>
+		</script>
+
+		<!-- Application launch configuration -->
+		<script>
+
+			sap.ui.getCore().attachInit(function() {
+
+				new sap.m.App ({
+					pages : [
+						new sap.m.Page({
+							title : "Production Line",
+							enableScrolling : true,
+							content : [
+								new sap.ui.core.ComponentContainer({
+									name : "Dashboard",
+									settings : {
+										id : "Dashboard"
+									}
+								})
+							]
+						})
+					]
+				}).placeAt("content");
+
+			});
+
+		</script>
+	</head>
+
+	<!-- UI Content -->
+	<body class="sapUiBody" id="content" role="application">
+	</body>
+
+</html>

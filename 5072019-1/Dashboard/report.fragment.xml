@@ -1,0 +1,39 @@
+<core:FragmentDefinition
+	xmlns="sap.m"
+	xmlns:core="sap.ui.core">
+	<Popover
+		showHeader="false"
+		contentWidth="320px"
+		contentHeight="500px"
+		placement="Bottom" >
+		<NavContainer>
+			<Page
+				title="Files">
+				<List
+					id="Files"
+					items="{files>/Rowsets/Rowset/0/Row}" >
+					<StandardListItem
+						title="{files>ObjectName}"
+						description="{files>FilePath}"
+						type="Active"
+						icon="sap-icon://action-settings"
+						press="onTrxSelect"
+						iconDensityAware="false"
+						iconInset="false" />
+				</List>
+			    <List
+					id="Default"
+					items="{files>/Rowsets/Rowset/0/Row}" >
+					<StandardListItem
+						title="WIP Report"
+						description="Default"
+						type="Active"
+						icon="sap-icon://action-settings"
+						press="onDefTrxSelect"
+						iconDensityAware="false"
+						iconInset="false" />
+				</List>
+			</Page>
+		</NavContainer>
+	</Popover>
+</core:FragmentDefinition>

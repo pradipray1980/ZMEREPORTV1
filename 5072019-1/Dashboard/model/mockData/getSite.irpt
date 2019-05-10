@@ -1,0 +1,32 @@
+{
+	"Rowsets": {
+		"DateCreated": "2019-04-16T20:08:17",
+		"Version": "15.1 SP3 Patch 28 (Jun 8, 2017)",
+		"StartDate": "2019-04-16T19:08:17+0000",
+		"EndDate": "2019-04-16T20:08:17+0000",
+		"CachedTime": "",
+		"Rowset": [{
+			"Columns": {
+				"Column": [{
+					"Name": "SITE",
+					"SourceColumn": "SITE",
+					"Description": "SITE",
+					"SQLDataType": -9,
+					"MinRange": 1.0,
+					"MaxRange": 1.0
+				}, {
+					"Name": "DESCRIPTION",
+					"SourceColumn": "DESCRIPTION",
+					"Description": "DESCRIPTION",
+					"SQLDataType": -9,
+					"MinRange": 1.0,
+					"MaxRange": 1.0
+				}]
+			},
+			"Row": [{
+				"SITE": "1000",
+				"DESCRIPTION": "Pradip's Plant"
+			}]
+		}]
+	}
+}

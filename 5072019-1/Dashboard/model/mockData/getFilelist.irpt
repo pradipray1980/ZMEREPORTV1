@@ -1,0 +1,112 @@
+{
+	"Rowsets": {
+		"DateCreated": "2019-04-18T19:45:21",
+		"Version": "15.1 SP3 Patch 28 (Jun 8, 2017)",
+		"StartDate": "2019-04-18T18:45:20+0000",
+		"EndDate": "2019-04-18T19:45:20+0000",
+		"CachedTime": "",
+		"Rowset": [{
+			"Columns": {
+				"Column": [{
+					"Name": "ObjectName",
+					"SourceColumn": "ObjectName",
+					"Description": "ObjectName",
+					"SQLDataType": 1,
+					"MinRange": 1.0,
+					"MaxRange": 1.0
+				}, {
+					"Name": "FilePath",
+					"SourceColumn": "FilePath",
+					"Description": "FilePath",
+					"SQLDataType": 1,
+					"MinRange": 1.0,
+					"MaxRange": 1.0
+				}, {
+					"Name": "Type",
+					"SourceColumn": "Type",
+					"Description": "Type",
+					"SQLDataType": 1,
+					"MinRange": 1.0,
+					"MaxRange": 1.0
+				}, {
+					"Name": "Created",
+					"SourceColumn": "Created",
+					"Description": "Created",
+					"SQLDataType": 93,
+					"MinRange": 1.0,
+					"MaxRange": 1.0
+				}, {
+					"Name": "CreatedBy",
+					"SourceColumn": "CreatedBy",
+					"Description": "CreatedBy",
+					"SQLDataType": 1,
+					"MinRange": 1.0,
+					"MaxRange": 1.0
+				}, {
+					"Name": "Modified",
+					"SourceColumn": "Modified",
+					"Description": "Modified",
+					"SQLDataType": 93,
+					"MinRange": 1.0,
+					"MaxRange": 1.0
+				}, {
+					"Name": "ModifiedBy",
+					"SourceColumn": "ModifiedBy",
+					"Description": "ModifiedBy",
+					"SQLDataType": 1,
+					"MinRange": 1.0,
+					"MaxRange": 1.0
+				}, {
+					"Name": "DcSpecificPath",
+					"SourceColumn": "DcSpecificPath",
+					"Description": "DcSpecificPath",
+					"SQLDataType": 1,
+					"MinRange": 1.0,
+					"MaxRange": 1.0
+				}, {
+					"Name": "State",
+					"SourceColumn": "State",
+					"Description": "State",
+					"SQLDataType": 1,
+					"MinRange": 1.0,
+					"MaxRange": 1.0
+				}, {
+					"Name": "ReadOnly",
+					"SourceColumn": "ReadOnly",
+					"Description": "ReadOnly",
+					"SQLDataType": 1,
+					"MinRange": 1.0,
+					"MaxRange": 1.0
+				}, {
+					"Name": "LockedUsername",
+					"SourceColumn": "LockedUsername",
+					"Description": "LockedUsername",
+					"SQLDataType": 1,
+					"MinRange": 1.0,
+					"MaxRange": 1.0
+				}, {
+					"Name": "Version",
+					"SourceColumn": "Version",
+					"Description": "Version",
+					"SQLDataType": 4,
+					"MinRange": 100.0,
+					"MaxRange": 100.0
+				}]
+			},
+			"Row": [{
+				"ObjectName": "getRoutingAvgRunUITrx.trx",
+				"FilePath": "Default/Dashboard/Report",
+				"Type": "Transaction",
+				"Created": "04/18/2019 18:41:55",
+				"CreatedBy": "rayp4",
+				"Modified": "04/18/2019 18:45:16",
+				"ModifiedBy": "rayp4",
+				"DcSpecificPath": "",
+				"State": "",
+				"ReadOnly": "false",
+				"LockedUsername": "",
+				"Version": "NA"
+			}]
+		}]
+	}
+}

@@ -1,0 +1,8 @@
+<SERVLET NAME="Illuminator">
+<HR>
+Illuminator Content Here
+<HR>
+<PARAM NAME= "QueryTemplate" VALUE="Default/Dashboard/Queries/getReportFilesTrx">
+<PARAM NAME= "Stylesheet" VALUE="/XMII/CM/">
+<PARAM NAME= "Content-Type" VALUE="text/json">
+</SERVLET>

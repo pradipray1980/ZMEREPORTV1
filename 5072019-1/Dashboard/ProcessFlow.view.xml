@@ -1,0 +1,40 @@
+<mvc:View
+	xmlns:mvc="sap.ui.core.mvc"
+	xmlns:m="sap.m"
+	xmlns="sap.suite.ui.commons"
+	controllerName="Dashboard.ProcessFlow">
+	<m:Panel>
+		<m:OverflowToolbar>
+			<m:Title text="" id="DashboardTitle"/>
+			<m:ToolbarSpacer />
+			<m:Text id="refreshTime" text=""/>
+		        <m:Button text="Refresh" press="onUpdateModel" type="Transparent" icon = "sap-icon://refresh" />
+			<m:Button text="Reports" press="onReport" type="Transparent" icon="sap-icon://pull-down"/>
+			<m:Button text="Advance Filter" press="onAdvFilter" type="Transparent" icon="sap-icon://add-filter" />
+			<m:Button text="Zoom In" press="onZoomIn" type="Transparent" icon="sap-icon://zoom-in"/>
+			<m:Button text="Zoom Out" press="onZoomOut" type="Transparent" icon="sap-icon://zoom-out"/>
+			<m:Button text="Filter" press="onFilter" type="Transparent" id="filter" visible="true" icon="sap-icon://filter" />
+			
+		</m:OverflowToolbar>
+		<ProcessFlow
+			id="processflow"
+			class="proceesFlownodesContainer"
+			scrollable="true"
+			wheelZoomable="false"
+			foldedCorners="false"
+			nodePress="onNodePress"
+		       	nodes="{
+				path: '/Rowsets/Rowset/0/Row',
+				factory: '.createProcessFlowNode'
+			}"
+			lanes="{/Rowsets/Rowset/1/Row}">
+			<lanes>
+				<ProcessFlowLaneHeader
+					laneId="{id}"
+					iconSrc="{icon}"
+					text="{label}"
+					position="{position}" />
+			</lanes>
+		</ProcessFlow>
+	</m:Panel>
+</mvc:View>

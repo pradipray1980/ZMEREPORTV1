@@ -1,0 +1,65 @@
+<core:FragmentDefinition
+	xmlns="sap.m"
+	xmlns:core="sap.ui.core">
+ <P13nDialog ok="onOK" cancel="onCancel"
+                 class="sapUiSizeCompact">
+		<NavContainer
+			id="navCon">
+			<Page
+				id="master"
+				title="SFC">
+				<List
+					id="Queue"
+					items="{sfc>/Rowsets/Rowset/0/Row}" >
+					<StandardListItem
+						title="{sfc>SFC} {sfc>ITEM}"
+						description="{sfc>STATUS_DESCRIPTION}"
+						type="Active"
+						icon="{ProductPicUrl}"
+						press="onNavToProduct"
+						iconDensityAware="false"
+						iconInset="false" />
+				</List>
+			       	<List
+					id="InWork"
+					items="{sfc>/Rowsets/Rowset/1/Row}" >
+					<StandardListItem
+						title="{sfc>SFC} {sfc>ITEM}"
+						description="{sfc>STATUS_DESCRIPTION}"
+						type="Active"
+						icon="{ProductPicUrl}"
+						press="onNavToProduct"
+						iconDensityAware="false"
+						iconInset="false" />
+				</List>
+			        	<List
+					id="NC"
+					items="{sfc>/Rowsets/Rowset/2/Row}" >
+					<StandardListItem
+						title="{sfc>SFC} {sfc>ITEM}"
+						description="{sfc>NC_CODE} OPEN {sfc>STATUS_DESCRIPTION}"
+						type="Active"
+						icon="{ProductPicUrl}"
+						press="onNavToProduct"
+						iconDensityAware="false"
+						iconInset="false" />
+				</List>
+			</Page>
+			<Page
+				id="detail"
+				showNavButton="true"
+				navButtonPress="onNavBack"
+				title="SFC {sfc>SFC}">
+				<ObjectHeader
+					title="{sfc>SHOP_ORDER}" >
+					<attributes>
+						<ObjectAttribute text="{sfc>ITEM} - {sfc>DESCRIPTION}" />
+						<ObjectAttribute text="Quantity {sfc>QTY}" />
+						<ObjectAttribute text="Quantity Done {sfc>QTY_DONE}" />
+					      <ObjectAttribute text="NC Code: {sfc>NC} {sfc>NC_CODE}" />
+					</attributes>
+				</ObjectHeader>
+			</Page>
+		</NavContainer>
+	 </P13nDialog>
+</core:FragmentDefinition>
